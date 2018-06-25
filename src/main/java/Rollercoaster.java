@@ -1,4 +1,4 @@
-public class Rollercoaster extends Attraction implements iTicketing {
+public class Rollercoaster extends Attraction implements iTicketing, iSecurity{
 
     public Rollercoaster(String name, double price, int capacity){
         super(name, price, capacity);
@@ -13,5 +13,9 @@ public class Rollercoaster extends Attraction implements iTicketing {
             return defaultPrice() * 2;
         return defaultPrice();}
 
-
+    public boolean isAllowedTo(Visitor visitor) {
+        if (visitor.getAge() > 12 && visitor.getHeight() > 145)
+        return true;{
+        return false;}
+    }
 }
