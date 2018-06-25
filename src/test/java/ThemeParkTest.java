@@ -28,8 +28,14 @@ public class ThemeParkTest {
 
    @Test
     public void canAddAttractions(){
-       themePark.add()
+       themePark.addToThemePark(rollercoaster1);
        assertEquals(1, themePark.countAttractions());
+   }
+
+   @Test
+    public void canAddVisitorsToAttractions(){
+       themePark.addToThemePark(rollercoaster1);
+
    }
 
 }

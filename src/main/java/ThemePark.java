@@ -7,4 +7,12 @@ public class ThemePark extends Attraction {
         super(name, capacity);
         this.attractions = new ArrayList<Attraction>();
     }
+
+    public void addToThemePark(Attraction attraction) {
+        this.attractions.add(attraction);
+    }
+
+    public int countAttractions() {
+        return this.attractions.size();
+    }
 }

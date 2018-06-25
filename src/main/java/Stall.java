@@ -1,22 +1,29 @@
 import java.util.ArrayList;
 
-public abstract class Attraction {
+public class Stall {
     private String name;
-    private int capacity;
+    private String ownerName;
+    private int parkingSpot;
     private ArrayList<Visitor> visitors;
 
-    public Attraction(String name, int capacity){
+    public Stall(String name, String ownerName, int parkingSpot){
         this.name = name;
-        this.capacity = capacity;
+        this.ownerName = ownerName;
+        this.parkingSpot = parkingSpot;
         this.visitors = new ArrayList<Visitor>();
     }
+
 
     public String getName() {
         return this.name;
     }
 
-    public int getCapacity() {
-        return this.capacity;
+    public String getOwnerName() {
+        return this.ownerName;
+    }
+
+    public int getParkingNumber() {
+        return this.parkingSpot;
     }
 
     public void addVisitor(Visitor visitor) {
