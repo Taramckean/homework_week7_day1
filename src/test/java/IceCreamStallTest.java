@@ -9,7 +9,7 @@ public class IceCreamStallTest {
 
     @Before
     public void before(){
-        iceCreamStall = new IceCreamStall("Ice Cream Stall", "Richard", 3, 3);
+        iceCreamStall = new IceCreamStall("Ice Cream Stall", "Richard", 2.8, 3);
         visitor1 = new Visitor("Jack", 23, 176, 80);
     }
 
@@ -32,5 +32,15 @@ public class IceCreamStallTest {
     public void canAddPersonToStall(){
         iceCreamStall.addVisitor(visitor1);
         assertEquals(1, iceCreamStall.countVisitors());
+    }
+
+    @Test
+    public void canGetDefaultPrice(){
+       assertEquals(2.8, iceCreamStall.defaultPrice(), 0.1);
+    }
+
+    @Test
+    public void canGetPriceFor(){
+        assertEquals(2.8, iceCreamStall.priceFor(), 0.1);
     }
 }

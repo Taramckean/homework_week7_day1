@@ -35,11 +35,13 @@ public abstract class Stall implements iTicketing {
     public int countVisitors() {
         return this.visitors.size();
     }
-    public double defaultPrice(){
+     public double defaultPrice(){
         return this.price;
-    }
-    public double priceFor(Visitor visitor){
+     }
+
+     public double priceFor(){
         return this.price;
-    }
+     }
+
 
 }

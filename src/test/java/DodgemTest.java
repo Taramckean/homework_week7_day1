@@ -6,11 +6,13 @@ import static org.junit.Assert.assertEquals;
 public class DodgemTest {
     Dodgem dodgem;
     Visitor visitor1;
+    Visitor visitor2;
 
     @Before
     public void before(){
-        dodgem = new Dodgem("Whiplash", 1, 4);
+        dodgem = new Dodgem("Whiplash", 10.6, 4);
         visitor1 = new Visitor("Campbell", 45, 210, 30);
+        visitor2 = new Visitor("Richard", 6, 240, 20);
     }
 
     @Test
@@ -32,5 +34,10 @@ public class DodgemTest {
     public void canAddVisitorToDodgem(){
         dodgem.addVisitor(visitor1);
         assertEquals(1, dodgem.countVisitors());
+    }
+
+    @Test
+    public void canCharge12YearOldsHalfPrice(){
+        assertEquals(5.3, dodgem.defaultPrice(visitor2), 0.1);
     }
 }
