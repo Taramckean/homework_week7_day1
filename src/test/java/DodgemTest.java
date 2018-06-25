@@ -38,6 +38,6 @@ public class DodgemTest {
 
     @Test
     public void canCharge12YearOldsHalfPrice(){
-        assertEquals(5.3, dodgem.defaultPrice(visitor2), 0.1);
+        assertEquals(5.3, dodgem.priceFor(visitor2), 0.1);
     }
 }

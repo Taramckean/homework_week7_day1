@@ -41,6 +41,6 @@ public class IceCreamStallTest {
 
     @Test
     public void canGetPriceFor(){
-        assertEquals(2.8, iceCreamStall.priceFor(), 0.1);
+        assertEquals(2.8, iceCreamStall.priceFor(visitor1), 0.1);
     }
 }

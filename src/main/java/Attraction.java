@@ -28,4 +28,8 @@ public abstract class Attraction {
     public int countVisitors() {
         return this.visitors.size();
     }
+
+    public double getPrice(){
+        return this.price;
+    }
 }
