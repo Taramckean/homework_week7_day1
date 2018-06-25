@@ -12,8 +12,8 @@ public class ThemeParkTest {
 
    @Before
     public void setUp(){
-       themePark = new ThemePark("TaraTowers", 20.5, 10000);
-       rollercoaster1 = new Rollercoaster("Stealth", 4, 2);
+       themePark = new ThemePark("TaraTowers", 20.5, 10000, 10);
+       rollercoaster1 = new Rollercoaster("Stealth", 4, 2, 4);
        visitor1 = new Visitor("Richard", 18, 210, 30);
 
    }

@@ -1,7 +1,7 @@
 public class Rollercoaster extends Attraction implements iTicketing, iSecurity{
 
-    public Rollercoaster(String name, double price, int capacity){
-        super(name, price, capacity);
+    public Rollercoaster(String name, double price, int capacity, int rating){
+        super(name, price, capacity, rating);
     }
 
     public double defaultPrice(){

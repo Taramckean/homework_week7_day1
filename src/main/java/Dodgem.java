@@ -1,7 +1,7 @@
 public class Dodgem extends Attraction implements iTicketing{
 
-    public Dodgem(String name, double price, int capacity){
-        super(name, price, capacity);
+    public Dodgem(String name, double price, int capacity, int rating){
+        super(name, price, capacity, rating);
     }
 
 

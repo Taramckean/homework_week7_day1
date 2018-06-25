@@ -1,7 +1,7 @@
 public class Playground extends Attraction implements iSecurity {
 
-    public Playground(String name, double price, int capacity){
-        super(name, price, capacity);
+    public Playground(String name, double price, int capacity, int rating){
+        super(name, price, capacity, rating);
     }
 
     public boolean isAllowedTo(Visitor visitor) {

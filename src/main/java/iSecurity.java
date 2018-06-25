@@ -1,3 +1,3 @@
 public interface iSecurity {
-   public boolean isAllowedTo(Visitor visitor);
+   boolean isAllowedTo(Visitor visitor);
 }

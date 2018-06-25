@@ -10,7 +10,7 @@ public class DodgemTest {
 
     @Before
     public void before(){
-        dodgem = new Dodgem("Whiplash", 10.6, 4);
+        dodgem = new Dodgem("Whiplash", 10.6, 4, 9);
         visitor1 = new Visitor("Campbell", 45, 210, 30);
         visitor2 = new Visitor("Richard", 6, 240, 20);
     }
@@ -39,5 +39,10 @@ public class DodgemTest {
     @Test
     public void canCharge12YearOldsHalfPrice(){
         assertEquals(5.3, dodgem.priceFor(visitor2), 0.1);
+    }
+
+    @Test
+    public void canGetRating(){
+        assertEquals(9, dodgem.getRating());
     }
 }
