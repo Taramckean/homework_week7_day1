@@ -1,7 +1,7 @@
 public class Dodgem extends Attraction {
 
-    public Dodgem(String name, int capaciy){
-        super(name, capaciy);
+    public Dodgem(String name, double price, int capaciy){
+        super(name, price, capaciy);
     }
 
 

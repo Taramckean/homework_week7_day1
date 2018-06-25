@@ -3,11 +3,13 @@ import java.util.ArrayList;
 public abstract class Attraction {
     private String name;
     private int capacity;
+    private double price;
     private ArrayList<Visitor> visitors;
 
-    public Attraction(String name, int capacity){
+    public Attraction(String name, double price, int capacity){
         this.name = name;
         this.capacity = capacity;
+        this.price = price;
         this.visitors = new ArrayList<Visitor>();
     }
 

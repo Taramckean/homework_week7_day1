@@ -11,7 +11,7 @@ public class BeerStallTest {
     
     @Before 
     public void before(){
-        beerStall = new BeerStall("Campbell Likes A Drink", "Campbell", 210);
+        beerStall = new BeerStall("Campbell Likes A Drink", "Campbell", 5.5, 210);
         visitor1 = new Visitor("Jack", 23, 176, 80);
         visitor2 = new Visitor("Richard", 14, 240, 20);
     }
@@ -35,5 +35,10 @@ public class BeerStallTest {
     public void canAddPersonToStall(){
         beerStall.addVisitor(visitor1);
         assertEquals(1, beerStall.countVisitors());
+    }
+
+    @Test
+    public void canGetDefaultPrice(){
+        assertEquals(5.5, beerStall.defaultPrice());
     }
 }

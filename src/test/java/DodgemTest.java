@@ -9,7 +9,7 @@ public class DodgemTest {
 
     @Before
     public void before(){
-        dodgem = new Dodgem("Whiplash", 1);
+        dodgem = new Dodgem("Whiplash", 1, 4);
         visitor1 = new Visitor("Campbell", 45, 210, 30);
     }
 

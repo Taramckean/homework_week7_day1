@@ -10,7 +10,7 @@ public class PlaygroundTest {
 
     @Before
     public void before(){
-        playground = new Playground("Tara's Park of Fun", 50);
+        playground = new Playground("Tara's Park of Fun", 3, 50);
         visitor = new Visitor("Adri", 28, 165, 50);
     }
 

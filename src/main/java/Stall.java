@@ -1,14 +1,16 @@
 import java.util.ArrayList;
 
-public class Stall {
+public abstract class Stall implements iTicketing {
     private String name;
     private String ownerName;
+    private double price;
     private int parkingSpot;
     private ArrayList<Visitor> visitors;
 
-    public Stall(String name, String ownerName, int parkingSpot){
+    public Stall(String name, String ownerName, double price, int parkingSpot){
         this.name = name;
         this.ownerName = ownerName;
+        this.price = price;
         this.parkingSpot = parkingSpot;
         this.visitors = new ArrayList<Visitor>();
     }
@@ -33,4 +35,11 @@ public class Stall {
     public int countVisitors() {
         return this.visitors.size();
     }
+    public double defaultPrice(){
+        return this.price;
+    }
+    public double priceFor(Visitor visitor){
+        return this.price;
+    }
+
 }
